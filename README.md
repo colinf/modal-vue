@@ -2,17 +2,22 @@
 
 > A modal dialog component for Vue.js 2.x
 
-## Build Setup
+![Example image](http://cfshare.s3-eu-west-1.amazonaws.com/2017-02-15_16-19-04.png)
+
+## installation
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+npm install --save modal-vue
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+You can the use the component in the normal vuejs way by either globally or locally registering it. See [this vuejs documentation page](https://vuejs.org/v2/guide/components.html) for full details.
+
+You can also refer to the examples included in this repository to see how to register the component globally or locally.
+
+## dependencies
+
+This component uses Bootstrap v3 for CSS.
+
+## credits
+
+This component was originally based on Kris Jenkin's excellent [Elm Dialog](https://github.com/krisajenkins/elm-dialog) library.
