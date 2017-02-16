@@ -18,7 +18,8 @@
     "vue",
     "vuejs",
     "components",
-    "ui"
+    "ui",
+    "bootstrap"
   ],
   "bugs": {
     "url": "https://github.com/colinf/modal-vue/issues"
