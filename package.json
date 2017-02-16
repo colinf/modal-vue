@@ -6,7 +6,8 @@
   "license": "BSD-3-Clause-Clear",
   "main": "dist/index.js",
   "scripts": {
-    "pack": "webpack -p"
+    "build": "webpack -p",
+    "demo": "webpack-dev-server --config ./demo/webpack.config.js"
   },
   "repository": {
     "type": "git",
