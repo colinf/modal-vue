@@ -1,0 +1,40 @@
+{
+  "name": "modal-vue",
+  "description": "A modal dialog component for Vue.js 2.x",
+  "version": "0.0.3",
+  "author": "Colin Fallon <colinf@mac.com>",
+  "license": "BSD-3-Clause-Clear",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack -p",
+    "demo": "webpack-dev-server --config ./demo/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colinf/modal-vue"
+  },
+  "keywords": [
+    "modal",
+    "dialog",
+    "vue",
+    "vuejs",
+    "components",
+    "ui",
+    "bootstrap"
+  ],
+  "bugs": {
+    "url": "https://github.com/colinf/modal-vue/issues"
+  },
+  "devDependencies": {
+    "vue": "^2.1.0",
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "vue-loader": "^10.0.0",
+    "vue-template-compiler": "^2.1.0",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
+  }
+}
