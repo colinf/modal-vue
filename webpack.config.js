@@ -3,7 +3,7 @@ const webpack = require('webpack')
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: './dist/',
+    path: './dist',
     filename: 'index.js',
     library: 'modal-vue',
     libraryTarget: 'umd'
@@ -15,7 +15,7 @@ module.exports = {
     loaders: [
       {
         test: /\.vue$/,
-        loader: 'vue'
+        loader: 'vue-loader'
       },
       {
         test: /\.js$/,
