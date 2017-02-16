@@ -6,13 +6,13 @@
 
 ## installation
 
-``` bash
+```bash
 npm install --save modal-vue
 ```
 
 Then, within the `<script>` tag of the component in which you want to use the `modal-vue` component you need to import it and register it as a component.
 
-``` js
+```js
 import Modal from 'modal-vue'
 export default {
   components: { Modal },
@@ -20,11 +20,20 @@ export default {
 }
 ```
 
+Refer to [the vuejs documentation page](https://vuejs.org/v2/guide/components.html) for full details of using components.
+
 ## usage
 
-You can the use the component in the normal vuejs way by either globally or locally registering it. See [this vuejs documentation page](https://vuejs.org/v2/guide/components.html) for full details.
+Let's start with a quick example extracted from the `<template>` tag of a component which uses modal-vue.
 
-You can also refer to the examples included in this repository to see how to register the component globally or locally.
+```vue
+<modal :showModal="showSourceDialog" :closeAction="closeSourceDialog">
+  <h1 slot="header">Select Source</h1>
+  <select slot="body" :value="database.source" @change="changeSource($event.target.value)">
+    <option v-for="source in ['', ...refdata.sources]">{{ source }}</option>
+  </select>
+</modal>
+```
 
 ## dependencies
 
