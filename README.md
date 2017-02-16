@@ -4,13 +4,15 @@
 
 ![Example image](http://cfshare.s3-eu-west-1.amazonaws.com/2017-02-15_16-19-04.png)
 
+Skip to the [demo section](#demo) below if you want to see a quick working example.
+
 ## installation
 
 ```bash
 npm install --save modal-vue
 ```
 
-Then, within the `<script>` tag of the component in which you want to use the `modal-vue` component you need to import it and register it as a component.
+Then, within the `<script>` tag of the component in which you want to use the `modal-vue` component you need to import it, and register it as a component.
 
 ```js
 import Modal from 'modal-vue'
@@ -24,7 +26,7 @@ Refer to [the vuejs documentation page](https://vuejs.org/v2/guide/components.ht
 
 ## usage
 
-Let's start with a quick example extracted from the `<template>` tag of a component which uses modal-vue. Maybe that's all you need! but see below for full details of all options.
+Let's start with a quick example extracted from the `<template>` tag of a component that uses modal-vue. Maybe that's all you need! but see below for full details of all options.
 
 ```vue
 <modal :showModal="showSourceDialog" :closeAction="closeSourceDialog">
@@ -50,7 +52,7 @@ If true, the modal dialog will be displayed. Pass in whatever state in your appl
 This is the function to called when the close button of the modal dialog is clicked. This can do whatever you need it to, but don't forget to change the state which controls the showModal prop or you will have a dialog for life.
 
 #### containerClass
-This is optional and specifies a CSS class to be used for the <div> that wraps the modal dialog if required.
+This is optional and specifies a Bootstrap container class to be used for the `<div>` that wraps the modal dialog if required.
 
 ### slots
 
@@ -74,6 +76,22 @@ This defines the contents of the body of the modal dialog. Often it might be use
 ## dependencies
 
 This component uses Bootstrap v3 for CSS. If you are not already using Bootstrap, you can find [installation instructions here](http://getbootstrap.com/getting-started/).
+
+## demo
+You can see a demo of modal-vue here:
+
+[https://colinf.github.io/modal-vue/index.html](https://colinf.github.io/modal-vue/index.html)
+
+If you want to play around with the demo, then follow these steps to get it running locally:
+
+```bash
+git clone https://github.com/colinf/modal-vue.git
+cd modal-vue
+npm install
+npm run demo
+```
+
+and then go to [http://localhost:8000](http://localhost:8000) to access it
 
 ## credits
 
