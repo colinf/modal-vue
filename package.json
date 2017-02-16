@@ -1,7 +1,7 @@
 {
   "name": "modal-vue",
   "description": "A modal dialog component for Vue.js 2.x",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Colin Fallon <colinf@mac.com>",
   "license": "BSD-3-Clause-Clear",
   "main": "dist/index.js",
