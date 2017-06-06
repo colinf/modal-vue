@@ -21,14 +21,16 @@
     </div>
     <simple-dialog v-if="exampleName==='Simple'" :showModal="showModal" :closeAction="closeDialog"></simple-dialog>
     <full-dialog v-if="exampleName==='Full'" :showModal="showModal" :closeAction="closeDialog" :clickAction="clickAction"></full-dialog>
+    <overlay-dialog v-if="exampleName==='Overlay'" :showModal="showModal" :closeAction="closeDialog" :clickAction="clickAction"></overlay-dialog>
   </div>
 </template>
 
 <script>
   import SimpleDialog from './SimpleDialog.vue'
   import FullDialog from './FullDialog.vue'
+  import OverlayDialog from './OverlayDialog.vue'
   export default {
-    components: { SimpleDialog, FullDialog },
+    components: { SimpleDialog, FullDialog, OverlayDialog },
     data () {
       return {
         showModal: false,
@@ -41,6 +43,10 @@
           {
             name: 'Full',
             text: 'A more complex example with a button in the footer.'
+          },
+          {
+            name: 'Overlay',
+            text: 'An example showing the ability to close the modal by clicking the overlay.'
           }
         ]
       }
