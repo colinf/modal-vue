@@ -44,6 +44,7 @@ modal-vue accepts 3 props which are passed to it as attributes in the `<modal>` 
 - [showModal](#showmodal) (Boolean)
 - [closeAction](#closeaction) (Function)
 - [containerClass](#containerclass) (String)
+- [closeOnOverlayClick](#closeonoverlayclick) (Boolean)
 
 #### showModal
 If true, the modal dialog will be displayed. Pass in whatever state in your application controls this.
@@ -53,6 +54,9 @@ This is the function to called when the close button of the modal dialog is clic
 
 #### containerClass
 This is optional and specifies a Bootstrap container class to be used for the `<div>` that wraps the modal dialog if required.
+
+#### closeOnOverlayClick
+If true, the `closeAction` will also be fired when the overlay is clicked.
 
 ### slots
 
