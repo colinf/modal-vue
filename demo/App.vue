@@ -16,6 +16,7 @@
             <div v-if="exampleName" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
               <button @click="showModal = true">Show it</button>
             </div>
+          </div>
         </div>
       </div>
     </div>
